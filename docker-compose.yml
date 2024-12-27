@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  telegram_bot:
+    build: .
+    container_name: telegram_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./messages.db:/app/messages.db  # Persist SQLite database
+    # (Optional) Define networks if needed
+    # networks:
+    #   - bot_network
+
+# (Optional) Define networks if used above
+# networks:
+#   bot_network:
+#     driver: bridge
