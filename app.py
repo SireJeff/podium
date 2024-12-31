@@ -14,7 +14,7 @@ import string
 # IMPORTANT: For security reasons, **never share your bot token publicly**.
 # The token below is an example. Replace it with your actual bot token.
 BOT_TOKEN = "7226809374:AAEXd8c3ulo6HB6n8TcPYgyIp300EeoJsW4"  # Replace with your Bot Token
-ADMIN_IDS = "1105522303,6943911086,155618958,6319243149".split(",")  # Replace with actual admin Telegram user IDs
+ADMIN_IDS = "1105522303,6943911086,155618958,6319243149,1268960995".split(",")  # Replace with actual admin Telegram user IDs
 ADMIN_IDS = [int(admin_id.strip()) for admin_id in ADMIN_IDS]
 CHANNEL_USERNAME = "sut_tribune"  # Without @
 
